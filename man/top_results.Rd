@@ -24,14 +24,9 @@ Results from all clusters are returned by default ("all").}
 \item{global}{logical indicating whether to filter results according to p_adj.glb (when TRUE), or p_adj.loc (when FALSE).}
 
 \item{up_down}{a character indicating whether to return: all results ("both" or "BOTH"), only up-regulated results ("up" or "UP") or down-regulated results ("down" or "DOWN").
-<<<<<<< HEAD
 In `res`, a FC > 1 (or log2FC > 0) indicates up-regulation of group1 (compared to group2); while a FC < 1 (or log2FC < 0) indicates down-regulation of group1 (compared to group2).}
 
 \item{sort_by}{a character indicating how results should be sorted.
-=======
-In `res`, a FC > 1 (or log2FC > 0) indicates up-regulation of group1 (compared to group2); while a FC < 1 (or log2FC < 0) indicates down-regulation of group1 (compared to group2).
-#' @param up_down a character indicating how results should be sorted.
->>>>>>> upstream/RELEASE_3_11
 Results can be sorted by globally adjusted p-value ("p_adj.glb", default choice), locally adjusted p-value ("p_adj.loc"), raw p-value ("p_val") or (log2)fold-change ("FC" or "log2FC").}
 }
 \value{
@@ -43,7 +38,6 @@ In locally adjusted p-values (`p_adj.loc`) BH correction is applied in each clus
 \code{top_results} returns the significant results obtained via \code{\link{distinct_test}}.
 }
 \examples{
-<<<<<<< HEAD
 # load pre-computed results (obtaines via `distinct_test`)
 data("res", package = "distinct")
 
@@ -70,9 +64,6 @@ top_results(res, cluster = "Dendritic cells", sort_by = "log2FC")
 # Visualize significant UP-regulated genes only:
 top_results(res, up_down = "UP",
   cluster = "Dendritic cells")
-=======
-# Check the examples of 'distinct_test'
->>>>>>> upstream/RELEASE_3_11
 
 }
 \seealso{

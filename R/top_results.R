@@ -9,17 +9,12 @@
 #' @param global logical indicating whether to filter results according to p_adj.glb (when TRUE), or p_adj.loc (when FALSE).
 #' @param up_down a character indicating whether to return: all results ("both" or "BOTH"), only up-regulated results ("up" or "UP") or down-regulated results ("down" or "DOWN").
 #' In `res`, a FC > 1 (or log2FC > 0) indicates up-regulation of group1 (compared to group2); while a FC < 1 (or log2FC < 0) indicates down-regulation of group1 (compared to group2).
-<<<<<<< HEAD
 #' @param sort_by a character indicating how results should be sorted.
-=======
-#' #' @param up_down a character indicating how results should be sorted.
->>>>>>> upstream/RELEASE_3_11
 #' Results can be sorted by globally adjusted p-value ("p_adj.glb", default choice), locally adjusted p-value ("p_adj.loc"), raw p-value ("p_val") or (log2)fold-change ("FC" or "log2FC").
 #' @return A \code{\linkS4class{data.frame}} object.
 #' Columns `gene` and `cluster_id` contain the gene and cell-cluster name, while `p_val`, `p_adj.loc` and `p_adj.glb` report the raw p-values, locally and globally adjusted p-values, via Benjamini and Hochberg (BH) correction.
 #' In locally adjusted p-values (`p_adj.loc`) BH correction is applied in each cluster separately, while in globally adjusted p-values (`p_adj.glb`) BH correction is performed to the results from all clusters.
 #' @examples
-<<<<<<< HEAD
 #' # load pre-computed results (obtaines via `distinct_test`)
 #' data("res", package = "distinct")
 #' 
@@ -46,9 +41,6 @@
 #' # Visualize significant UP-regulated genes only:
 #' top_results(res, up_down = "UP",
 #'   cluster = "Dendritic cells")
-=======
-#' # Check the examples of 'distinct_test'
->>>>>>> upstream/RELEASE_3_11
 #' 
 #' @author Simone Tiberi \email{simone.tiberi@uzh.ch}
 #' 

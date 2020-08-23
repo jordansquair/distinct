@@ -134,15 +134,12 @@ distinct_test = function(x,
     is.numeric(n_cores), length(n_cores) == 1L
   )
   
-<<<<<<< HEAD
   # check P's are in a non-decreasing order:
   if( (P_1 > P_2) | (P_2 > P_3) | (P_3 > P_4) ){
     message("The number of permutations `P_x` must be in a non-decreasing order: P_1 <= P_2 <= P_3 <= P_4")
     return(NULL)
   }
   
-=======
->>>>>>> upstream/RELEASE_3_11
   # check for NA's:
   if(any(is.na(design)) | any(is.null(design)) | any(is.nan(design))){
     message("'design' contains NA, NULL or NaN values")
