@@ -1,3 +1,6 @@
+Changes in version 1.0.4:
++ major speed-up in log2-FC function.
+
 Changes in version 1.0.3:
 + FC and log2-FC calculation added (via 'log2_FC' function);
 + 'top_results' function edited to sort results by p-value and log2-FC.
