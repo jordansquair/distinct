@@ -37,6 +37,7 @@ A FC > 1 (or log2FC > 0) indicates up-regulation of group1 (compared to group2);
 \code{log2_FC} extends the results obtained via \code{\link{distinct_test}}, by computing fold changes (FC) and log2-FC between conditions.
 }
 \examples{
+<<<<<<< HEAD
 # load pre-computed results (obtaines via `distinct_test`)
 data("res", package = "distinct")
 # load the input data:
@@ -51,6 +52,9 @@ res = log2_FC(res = res,
 
 # Visualize significant results:
 head(top_results(res))
+=======
+# Check the examples of 'distinct_test'
+>>>>>>> upstream/RELEASE_3_11
 
 }
 \seealso{
