@@ -19,7 +19,7 @@ biocViews: Genetics,
   Software, Transcription, StatisticalMethod, Visualization,
   SingleCell, FlowCytometry, GeneTarget
 License: GPL (>= 3)
-Depends: R (>= 4.0)
+Depends: R (>= 3.6)
 Imports: Rcpp, stats, SummarizedExperiment, SingleCellExperiment, methods, Matrix, foreach, parallel, doParallel, doRNG, ggplot2, limma, scater
 Suggests: knitr, testthat, UpSetR
 LinkingTo: Rcpp, RcppArmadillo
